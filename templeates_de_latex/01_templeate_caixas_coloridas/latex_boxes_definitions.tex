@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definições de caixas de texto e suas cores
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Cores
+%%
+\definecolor{SalmaoClaro}{cmyk}{0.04,0.2,0.35,0}
+\definecolor{SalmaoEscuro}{cmyk}{0.08,0.4,0.7,0}
+\definecolor{AmareloClaro}{cmyk}{0,0,0.1,0.05}
+\definecolor{AmareloEscuro}{cmyk}{0,0,0.5,0.05}
+\definecolor{AzulClaro}{cmyk}{0.1,0.1,0,0}
+\definecolor{AzulEscuro}{cmyk}{0.4,0.4,0,0}
+\definecolor{MagentaClaro}{cmyk}{0,0.1,0,0.05}
+\definecolor{MagentaEscuro}{cmyk}{0,0.5,0,0.05}
+\definecolor{VerdeClaro}{cmyk}{0.1,0,0.1,0.05}
+\definecolor{VerdeEscuro}{cmyk}{0.5,0,0.5,0.05}
+%%
+%% Contadores individuais para cada tipo de caixa
+%%
+% Definição dos contadores
+\newcounter{CaixaTeoCounter}
+\newcounter{CaixaDefCounter}
+\newcounter{CaixaPropCounter}
+\newcounter{CaixaLemaCounter}
+\newcounter{CaixaCoroCounter}
+\newcounter{CaixaObsCounter}
+
+% Inicialização dos contadores para começar de 1
+\setcounter{CaixaTeoCounter}{1}
+\setcounter{CaixaDefCounter}{1}
+\setcounter{CaixaPropCounter}{1}
+\setcounter{CaixaLemaCounter}{1}
+\setcounter{CaixaCoroCounter}{1}
+\setcounter{CaixaObsCounter}{1}
+
+%% Caixa de Teorema
+\newtcolorbox{CaixaTeo}[2][]{%
+    coltitle=black,
+    colback=VerdeClaro,
+    colframe=VerdeEscuro,
+    title={Teorema T\theCaixaTeoCounter:~#2},
+    before upper={\refstepcounter{CaixaTeoCounter}\label{#1}},
+    #1
+}
+
+%% Caixa de Definição
+\newtcolorbox{CaixaDef}[2][]{%
+    coltitle=black,
+    colback=AmareloClaro,
+    colframe=AmareloEscuro,
+    title={Definição D\theCaixaDefCounter:~#2},
+    before upper={\refstepcounter{CaixaDefCounter}\label{#1}},
+    #1
+}
+
+%% Caixa de Proposição
+\newtcolorbox{CaixaProp}[2][]{%
+    coltitle=black,
+    colback=AzulClaro,
+    colframe=AzulEscuro,
+    title={Proposição P\theCaixaPropCounter:~#2},
+    before upper={\refstepcounter{CaixaPropCounter}\label{#1}},
+    #1
+}
+
+%% Caixa de Lema
+\newtcolorbox{CaixaLema}[2][]{%
+    coltitle=black,
+    colback=AzulClaro,
+    colframe=AzulEscuro,
+    title={Lema L\theCaixaLemaCounter:~#2},
+    before upper={\refstepcounter{CaixaLemaCounter}\label{#1}},
+    #1
+}
+
+%% Caixa de Corolário
+\newtcolorbox{CaixaCoro}[2][]{%
+    coltitle=black,
+    colback=SalmaoClaro,
+    colframe=SalmaoEscuro,
+    title={Corolário C\theCaixaCoroCounter:~#2},
+    before upper={\refstepcounter{CaixaCoroCounter}\label{#1}},
+    #1
+}
+
+%% Caixa de Observação
+\newtcolorbox{CaixaObs}[2][]{%
+    coltitle=black,
+    colback=MagentaClaro,
+    colframe=MagentaEscuro,
+    title={Observação O\theCaixaObsCounter:~#2},
+    before upper={\refstepcounter{CaixaObsCounter}\label{#1}},
+    #1
+}

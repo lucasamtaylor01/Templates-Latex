@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+% Pacote para riscar expressões matemáticas, útil para cancelamentos e simplificações
+\usepackage{cancel}
+
+% Pacote para inserir gráficos e imagens no documento
+\usepackage{graphicx}
+
+% Pacote de símbolos matemáticos adicionais (AMS)
+\usepackage{amssymb}
+
+% Pacote para configurar o idioma do documento; configurado para português
+\usepackage[portuguese]{babel}
+
+% Pacote para configurar as margens do documento
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+% Pacote para inserir caracteres ASCII no documento
+\usepackage{ascii}
+
+% Pacote de símbolos matemáticos adicionais (AMS)
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Pacote para criar gráficos e diagramas
+\usepackage{tikz}
+
+% Suporte a caracteres UTF-8
+\usepackage[utf8]{inputenc}
+
+% Pacote para incluir listagens de código no documento
+\usepackage{listings}
+
+% Remove o recuo nos parágrafos
+\usepackage{parskip}
+
+% Define o espaçamento entre linhas
+\linespread{1.0}
+
+% Pacote para customizar listas
+\usepackage{enumitem}
+
+% Pacote para criar caixas de texto personalizadas
+\usepackage{tcolorbox} 
+
+% Biblioteca de estilos e quebras de página para tcolorbox
+\tcbuselibrary{skins,breakable}
+
+% Pacote para manipulação de cores
+\usepackage{xcolor}
+
+% Pacote para criar referências cruzadas personalizadas
+\usepackage{prettyref}
+
+% Inclui as definições de caixas personalizadas de outro arquivo LaTeX
+\input{latex_boxes_definitions.tex}
+
+\title{Título}
+\author{Nome}
+\begin{document}
+
+\title{Exemplos de Caixas de Texto Corrigidos}
+\author{Autor}
+\date{\today}
+\maketitle
+
+\section{Introdução}
+Este documento corrigido demonstra o uso das caixas de texto definidas no arquivo separado.
+
+\section{Exemplos}
+
+\begin{CaixaTeo}{Exemplo de Teorema}
+    Este é um exemplo de teorema utilizando a caixa personalizada.
+\end{CaixaTeo}
+
+\begin{CaixaDef}{Exemplo de Definição}
+    Este é um exemplo de definição utilizando a caixa personalizada.
+\end{CaixaDef}
+
+\begin{CaixaProp}{Exemplo de Proposição}
+    Este é um exemplo de proposição utilizando a caixa personalizada.
+\end{CaixaProp}
+
+\begin{CaixaLema}{Exemplo de Lema}
+    Este é um exemplo de lema utilizando a caixa personalizada.
+\end{CaixaLema}
+
+\begin{CaixaCoro}{Exemplo de Corolário}
+    Este é um exemplo de corolário utilizando a caixa personalizada.
+\end{CaixaCoro}
+
+\begin{CaixaObs}{Exemplo de Observação}
+    Este é um exemplo de observação utilizando a caixa personalizada.
+\end{CaixaObs}
+
+\end{document}
