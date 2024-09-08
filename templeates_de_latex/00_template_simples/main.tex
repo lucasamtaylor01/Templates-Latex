@@ -1,30 +1,64 @@
 \documentclass[12pt]{article}
 
+% Pacote para riscar expressões matemáticas, útil para cancelamentos e simplificações
 \usepackage{cancel}
-\usepackage{graphicx} 
+
+% Pacote para inserir gráficos e imagens no documento
+\usepackage{graphicx}
+
+% Pacote de símbolos matemáticos adicionais (AMS)
 \usepackage{amssymb}
+
+% Configura o idioma do documento; configurado para português
 \usepackage[portuguese]{babel}
+
+% Configura as margens do documento
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+% Pacote para inserir caracteres ASCII no documento
 \usepackage{ascii}
+
+% Pacote de símbolos matemáticos adicionais (AMS)
 \usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts} 
+\usepackage{amsfonts}
+
+% Pacote para criar gráficos e diagramas
 \usepackage{tikz}
+
+% Suporte a caracteres UTF-8
 \usepackage[utf8]{inputenc}
+
+% Pacote para incluir listagens de código no documento
 \usepackage{listings}
+
+% Remove o recuo nos parágrafos
 \usepackage{parskip}
+
+% Define o espaçamento entre linhas (1.5)
 \linespread{1.5}
+
+% Pacote para customizar listas
 \usepackage{enumitem}
+
+% Configuração de título e autor
 \title{Título}
 \author{Nome}
-
 \date{\today}
 
 \begin{document}
-    \maketitle
 
+% Gera o título do documento
+\maketitle
+
+\newpage
+
+% Inclui todas as referências no documento, mesmo que não tenham sido citadas
 \nocite{*}
+
+% Define o estilo da bibliografia
 \bibliographystyle{plain}
+
+% Referência o arquivo de bibliografia
 \bibliography{ref}
 
 \end{document}
