@@ -18,4 +18,4 @@ Simples assim! 😊
 
 ## 📄 Licença
 
-Este projeto é distribuído sob a Licença Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+Este projeto é distribuído sob a Licença Creative Commons
