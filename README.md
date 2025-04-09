@@ -18,4 +18,4 @@ Simples assim! 😊
 
 ## 📄 Licença
 
-Este projeto é distribuído sob a Licença Creative Commons
+Este projeto é distribuído sob a Licença [MIT](LICENSE)
