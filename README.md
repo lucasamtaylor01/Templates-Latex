@@ -1,20 +1,15 @@
-# 📚 Coleção de Templates LaTeX
+# 📚 Templates LaTeX
+Este repositório oferece uma seleção de templates em LaTeX projetados especialmente para facilitar a criação de documentos matemáticos.
 
-Este repositório oferece uma seleção de templates em LaTeX projetados especialmente para facilitar a criação de documentos matemáticos, como artigos, relatórios, teses e provas formais. Ideal para quem trabalha com fórmulas e demonstrações em matemática e áreas afins.
-
-## ✨ O que você encontra aqui?
-
-Os templates são prontos para o uso e ajudam a estruturar teoremas, definições e fórmulas de maneira clara e organizada.
+## 📝 Sobre os templates
+1. `caixas-coloridas`: ideal para compilação de teoremas, definições e afins para resumos teóricos;
+2. `simples`: ideal para listas de exercícios;
+3. `projeto`: desenvolvido para projetos de iniciação científica e TCC.  
 
 ## 🚀 Como começar?
-
-1. Baixe o repositório.
-2. Descompacte o arquivo.
-3. Abra o template no seu editor de LaTeX favorito.
-4. Personalize o conteúdo de acordo com suas necessidades.
-5. Compile o arquivo `.tex` para gerar o PDF final.
-
-Simples assim! 😊
+1. Selecione o template
+2. Baixe o `/latex` do template
+3. Faça upload no _overleaf_ no formato `.zip` OU abra o `/latex` no seu compilador LaTeX favorito
 
 ## 📄 Licença
 
