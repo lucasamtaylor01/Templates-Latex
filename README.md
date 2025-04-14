@@ -9,7 +9,7 @@ Este repositório oferece uma seleção de templates em LaTeX projetados especia
 ## 🚀 Como começar?
 1. Selecione o template
 2. Baixe o `/latex` do template
-3. Faça upload no [overleaf](https://www.overleaf.com/) do arquivo `.zip` do template OU abra o descompacte e use localmente no seu compilador LaTeX favorito
+3. Faça upload no [overleaf](https://www.overleaf.com/) do arquivo `.zip` do template OU descompacte e use localmente no seu compilador LaTeX favorito
 
 ## 📄 Licença
 
