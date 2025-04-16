@@ -7,8 +7,6 @@ A versão presente neste diretório do template `IME_Thesis` é derivada do mode
 ---
 ## 📄 Licença 
 
-Este projeto está licenciado sob a [MIT License](/LICENSE).
-
-> Apesar de não ser obrigatório, vale lembrar que, originalmente, o projeto está na mesma licença.
+Este projeto está licenciado sob a [MIT License](/LICENSE). Apesar de não ser obrigatório, vale lembrar que, originalmente, o projeto está na mesma licença.
 
 > **Link do projeto original**: [https://gitlab.com/ccsl-usp/modelo-latex/](https://gitlab.com/ccsl-usp/modelo-latex/). 
