@@ -4,7 +4,10 @@ Este repositório oferece uma seleção de templates em LaTeX projetados especia
 ## 📝 Sobre os templates
 1. `caixas-coloridas`: ideal para compilação de teoremas, definições e afins para resumos teóricos;
 2. `simples`: ideal para listas de exercícios;
-3. `projeto`: desenvolvido para projetos de iniciação científica e TCC.  
+3. `projeto`: desenvolvido para projetos de iniciação científica e TCC.
+4. `abnt`: quase alinhado com o modelo ABNT (*)
+
+> (*) Necessito verificar
 
 ## 🚀 Como começar?
 1. Selecione o template
