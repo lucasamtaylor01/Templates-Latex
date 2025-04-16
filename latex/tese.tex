@@ -1,0 +1,201 @@
+% Arquivo LaTeX de exemplo de dissertação/tese a ser apresentada à CPG do IME-USP
+%
+% Criação: Jesús P. Mena-Chalco
+% Revisão: Fabio Kon e Paulo Feofiloff
+% Adaptação para UTF8, biblatex e outras melhorias: Nelson Lago
+%
+% Except where otherwise indicated, these files are distributed under
+% the MIT Licence. The example text, which includes the tutorial and
+% examples as well as the explanatory comments in the source, are
+% available under the Creative Commons Attribution International
+% Licence, v4.0 (CC-BY 4.0) - https://creativecommons.org/licenses/by/4.0/
+
+% ----------------------------------------------------------
+\makeatletter
+\def\input@path{{aux/}}
+\makeatother
+
+\documentclass[a4paper,12pt,twoside,english,brazilian]{book}
+
+\usepackage{imegoodies}
+\usepackage[thesis]{aux/imelooks}
+\usepackage{imakeidx}
+
+%\nocolorlinks
+
+% Caminhos para figuras
+\graphicspath{{img/}}
+
+% Comandos de idioma
+\babeltags{br = brazilian, en = english}
+
+% Bibliografia
+\addbibresource{bibliografia.bib}
+%\nocite{*} % incluir todas as referências
+
+% Hifenizações específicas
+\babelhyphenation{documentclass latexmk soft-ware clsguide}
+\babelhyphenation[brazilian]{Fu-la-no}
+\babelhyphenation[english]{what-ever}
+
+% Título e autoria
+\title{Título do trabalho}[um subtítulo]
+\translatedtitle{Title of the document}[a subtitle]
+\author[fem]{Nome Completo}
+
+% Orientação
+\def\profa{Prof\kern.02em.\kern-.07emª\kern.07em}
+\def\dra{Dr\kern-.04em.\kern-.11emª\kern.07em}
+\orientador[fem]{\profa{} \dra{} Fulana de Tal}
+\coorientador{Prof. Dr. Ciclano de Tal}
+\coorientador[fem]{\profa{} \dra{} Beltrana de Tal}
+
+% Banca
+\banca{
+  \profa{} \dra{} Fulana de Tal (orientadora) -- IME-USP,
+  Prof. Dr. Ciclano de Tal -- IME-USP,
+  \profa{} \dra{} Convidada de Tal -- IMPA,
+}
+
+% Tipo de trabalho e programa
+\tipotese{
+  mestrado,
+  %doutorado,
+  %tcc,
+  %definitiva,
+  %quali,
+  programa={Ciência da Computação},
+}
+
+% Defesa
+\defesa{
+  local={São Paulo},
+  data=2017-08-10,
+}
+
+% Licença
+%\direitos{CC-BY-NC-ND}
+%\direitos{Autorizo a reprodução e divulgação total ou parcial deste
+%          trabalho, por qualquer meio convencional ou eletrônico,
+%          para fins de estudo e pesquisa, desde que citada a fonte.}
+%\direitos{I authorize the complete or partial reproduction and disclosure
+%          of this work by any conventional or electronic means for study
+%          and research purposes, provided that the source is acknowledged.}
+\direitos{CC-BY}
+
+% Ficha catalográfica (preencher com código gerado)
+\fichacatalografica{}
+
+% -------------------------------------------
+% DOCUMENTO
+% -------------------------------------------
+
+\begin{document}
+
+% Páginas iniciais
+\frontmatter
+\pagestyle{plain}
+\onehalfspacing
+\maketitle
+
+% Dedicatória
+\begin{dedicatoria}
+Esta seção é opcional.
+\end{dedicatoria}
+
+\pagenumbering{roman}
+
+% Agradecimentos
+\chapter*{Agradecimentos}
+\epigrafe{Do. Or do not. There is no try.}{Mestre Yoda}
+Texto texto texto...
+
+% Resumo e abstract
+\input{conteudo/resumo_abstract}
+
+% Listas manuais
+\newcommand\disablenewpage[1]{{\let\clearpage\par\let\cleardoublepage\par #1}}
+\bgroup
+\raggedbottom
+
+\disablenewpage{\chapter*{Lista de abreviaturas}}
+\begin{tabular}{rl}
+   CFT & Transformada contínua de Fourier\\
+   DFT & Transformada discreta de Fourier\\
+  EIIP & Potencial de interação elétron-íon\\
+  STFT & Transformada de Fourier de tempo reduzido\\
+  ABNT & Associação Brasileira de Normas Técnicas\\
+   URL & Uniform Resource Locator\\
+   IME & Instituto de Matemática e Estatística\\
+   USP & Universidade de São Paulo
+\end{tabular}
+
+\disablenewpage{\chapter*{Lista de símbolos}}
+\begin{tabular}{rl}
+  $\omega$ & Frequência angular\\
+  $\psi$ & Função de análise wavelet\\
+  $\Psi$ & Transformada de Fourier de $\psi$\\
+\end{tabular}
+
+% Listas automáticas
+\clearpage
+\disablenewpage{\listoffigures}
+\disablenewpage{\listoftables}
+\disablenewpage{\listof{program}{\programlistname}}
+
+% Sumário
+\tableofcontents
+\egroup
+
+% Índice remissivo (remissivas iniciais)
+\index{Inglês|see{Língua estrangeira}}
+\index{Figuras|see{Floats}}
+\index{Tabelas|see{Floats}}
+\index{Código-fonte|see{Floats}}
+\index{Subcaptions|see{Subfiguras}}
+\index{Equações|see{Modo matemático}}
+\index{Rodapé, notas|see{Notas de rodapé}}
+\index{Captions|see{Legendas}}
+
+% Capítulos
+\mainmatter
+\pagestyle{mainmatter}
+\singlespacing
+
+\pagestyle{unnumberedchapter}
+\input{conteudo/00_exemplo_introducao}
+\pagestyle{mainmatter}
+\input{conteudo/01_exemplo_normas_ime}
+\input{conteudo/02_exemplo_usando_o_modelo}
+\input{conteudo/03_exemplo_latex}
+\input{conteudo/04_exemplo_tutorial}
+\input{conteudo/05_exemplo_exemplos}
+
+% Apêndices
+\cleardoublepage
+\pagestyle{appendix}
+\appendix
+\addappheadtotoc
+\input{conteudo/apendice_exemplo_faq}
+
+% Anexos
+\cleardoublepage
+\annex
+\addappheadtotoc
+\input{conteudo/anexo_exemplo_imegoodies}
+\input{conteudo/anexo_exemplo_pseudocodigo}
+
+% Referências
+\backmatter
+\pagestyle{backmatter}
+\addtocontents{toc}{\vspace{2\baselineskip plus .5\baselineskip minus .5\baselineskip}}
+
+\printbibliography[
+  title=\refname\label{sec:bib},
+  heading=bibintoc,
+]
+
+% Índice remissivo (opcional)
+\printindex
+
+\end{document}
